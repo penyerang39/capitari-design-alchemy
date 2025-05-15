@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -24,8 +23,17 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="#" className="text-capitari-black font-montagu font-medium text-xl md:text-2xl tracking-tight">
-          Capitari
+        <a href="#" className="relative">
+          <img
+            src="/capitari rectangle.svg"
+            alt="Capitari"
+            className="hidden md:block h-10 w-auto"
+          />
+          <img
+            src="/capitari square.svg"
+            alt="Capitari"
+            className="block md:hidden h-10 w-10"
+          />
         </a>
         
         <div className="lg:hidden">
